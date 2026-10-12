@@ -40,8 +40,8 @@ void mover(int d1, int d2) {
 
 void adelante()        { mover( 1,  1); }
 void atras()           { mover(-1, -1); }
-void derecha()         { mover( 1,  0); }   // gira a la derecha: motor 1 avanza, motor 2 parado
-void izquierda()       { mover( 0,  1); }   // gira a la izquierda: motor 2 avanza, motor 1 parado
+void derecha()         { mover( 1, -1); }
+void izquierda()       { mover(-1,  1); }
 void giroDerecha()     { mover( 1, -1); }   // gira sobre su eje
 void giroIzquierda()   { mover(-1,  1); }   // gira sobre su eje
 void parar()           { mover( 0,  0); }
