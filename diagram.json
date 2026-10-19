@@ -1,4 +1,3 @@
-
 {
   "version": 1,
   "author": "ESP32 - Dos puentes H con relés",
@@ -10,6 +9,13 @@
       "top": 0,
       "left": 0,
       "attrs": {}
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": -130,
+      "left": 230,
+      "attrs": { "i2cAddress": "0x3C" }
     },
     {
       "type": "wokwi-relay-module",
@@ -137,7 +143,12 @@
 
     ["rly4:COM", "res4:1", "green", []],
     ["res4:2", "led4:A", "green", []],
-    ["led4:C", "rly3:COM", "green", []]
+    ["led4:C", "rly3:COM", "green", []],
+
+    ["oled1:GND", "esp:GND.1", "black", []],
+    ["oled1:VCC", "esp:3V3", "red", []],
+    ["oled1:SDA", "esp:21", "blue", []],
+    ["oled1:SCL", "esp:22", "yellow", []]
   ],
   "dependencies": {}
 }

@@ -7,3 +7,5 @@ firmware = ".pio/build/esp32/firmware.bin"
 [[net.forward]]
 from = "localhost:8180"
 to = "target:80"
+Adafruit GFX Library
+Adafruit SSD1306
